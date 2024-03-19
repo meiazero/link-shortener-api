@@ -1,0 +1,28 @@
+{
+	"name": "link-shortener-api",
+	"module": "index.ts",
+	"type": "module",
+	"scripts": {
+		"dev": "bun --watch run ./src/server.ts",
+		"setup": "bun run ./src/setup.ts"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@typescript-eslint/eslint-plugin": "^7.1.0",
+		"@typescript-eslint/parser": "^7.1.0",
+		"eslint": "^8.57.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-config-turbo": "^1.12.4",
+		"eslint-plugin-only-warn": "^1.1.0",
+		"typescript": "^5.4.2"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"fastify": "^4.26.2",
+		"postgres": "^3.4.3",
+		"redis": "^4.6.13",
+		"zod": "^3.22.4"
+	}
+}
